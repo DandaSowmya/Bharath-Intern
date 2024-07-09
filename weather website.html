@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #00796b;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .weather {
+            text-align: center;
+        }
+        .weather .location h2 {
+            font-size: 2em;
+            margin: 10px 0;
+        }
+        .weather .conditions, .weather .details {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+        </header>
+        <div class="weather">
+            <div class="location">
+                <h2>Your City</h2>
+            </div>
+            <div class="conditions">
+                <p>Temperature: <span id="temperature">25°C</span></p>
+                <p>Condition: <span id="condition">Sunny</span></p>
+            </div>
+            <div class="details">
+                <p>Humidity: <span id="humidity">60%</span></p>
+                <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
